@@ -1,0 +1,87 @@
+.form-group{
+   position: relative;
+}
+.error-icon {
+   position: absolute;
+   top: 2.5rem;
+   right: 1rem;
+   height: 25px;
+   display: none;
+   border-radius: 50%;
+   width: 25px;
+   border: 1px solid #bdb8b8;
+   text-align: center;
+   color: #f30909;
+   cursor: pointer;
+}
+.info{
+   height: 21px;
+    width: 21px;
+    text-align: center;
+    color: lightslategrey;
+    border: 1px solid grey;
+    border-radius: 51%;
+    font-weight: 0;
+    font-size: small;
+}
+#taxForm{
+padding: 2rem !important;
+}
+.container{
+   width: 50% !important;
+   margin-top: 60px;
+   border: 1px solid;
+   box-shadow: 12px 12px 30px #b100ff, -12px -12px 30px #2dff03;
+
+}
+
+label{
+   display: flex !important;
+   font-weight: 600;
+   column-gap: 2px;
+}
+
+
+/*tooltip */
+
+.textTooltip {
+   visibility: hidden;
+   background-color: #5d8ca1;
+   color: #fff;
+   text-align: start;
+   padding: 3px 4px;
+   border-radius: 6px;
+   width: 40%;
+   margin-top: -40px;
+   margin-left: 8px;
+   /* Position the tooltip text - see examples below! */
+   position: absolute;
+   z-index: 1;
+ }
+ 
+ /* Show the tooltip text when you mouse over the tooltip container */
+ .info:hover .textTooltip {
+   visibility: visible;
+ }
+ .error-icon .textTooltip {
+   visibility: hidden;
+   background-color: #5d8ca1;
+   color: #fff;
+   text-align: start;
+   padding: 3px 4px;
+   border-radius: 6px;
+   width: 80px;
+   
+   font-size: small;
+   margin-top: -40px;
+   margin-left: 8px;
+   /* Position the tooltip text - see examples below! */
+   position: absolute;
+   z-index: 1;
+ }
+.error-icon:hover .textTooltip {
+   visibility: visible;
+ }
+ .modal-content{
+   text-align: center;
+ }

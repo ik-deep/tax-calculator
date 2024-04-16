@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Tax Calculator</h2>
+        <form id="taxForm">
+            <div class="form-group">
+                <label for="grossIncome">Enter gross annual income<div class="info">? <span class="textTooltip">Gross
+                            annual income is your total salary in a year before any deductions</span></div></label>
+                <input type="text" class="form-control" id="grossIncome" name="grossIncome"
+                    placeholder="Enter gross annual income">
+                <div class="error-icon">! <span class="textTooltip">Please enter numbers only</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="extraIncome">Enter extra income<div class="info">? <span class="textTooltip">This is your
+                            extra income from other sources</span></div></label>
+                <input type="text" class="form-control" id="extraIncome" name="extraIncome"
+                    placeholder="Enter extra income from other sources">
+                <div class="error-icon">! <span class="textTooltip">Please enter numbers only</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Enter age group<div class="info">? <span class="textTooltip">Tax apply according to the
+                            age group</span></div></label>
+                <select class="form-control" id="age" name="age">
+                    <option value="">Select Age Group</option>
+                    <option value="below40">Below 40</option>
+                    <option value="40to60">40 to 60</option>
+                    <option value="above60">Above 60</option>
+                </select>
+                <div class="error-icon">! <span class="textTooltip">Please select the age group</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="deductionIncome">Enter total applicable deductions<div class="info">? <span
+                            class="textTooltip">Applicable deduction</span></div></label>
+                <input type="text" class="form-control" id="deductionIncome" name="deductionIncome"
+                    placeholder="Add total applicable deductions">
+                <div class="error-icon">! <span class="textTooltip">Please enter numbers only</span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Add modal for displaying tax calculation result -->
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Your overall income will be</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <div aria-hidden="true">&times;</div>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
