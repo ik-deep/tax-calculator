@@ -16,6 +16,18 @@ For income over 8 Lakhs, the amount over 8 Lakhs is taxed at different rates bas
 <h5>Modal Display</h5>
 
 - Upon form submission, a modal displays the calculated tax amount.
+
+<h3>Screenshots</h3>
+
+<img width="725" alt="Screenshot-tax-calculation form" src="https://github.com/ik-deep/tax-calculator/assets/80601941/23125103-e9ec-4f19-a8f2-ac9eebcebf48">
+<img width="698" alt="tooltip-message" src="https://github.com/ik-deep/tax-calculator/assets/80601941/7a67980e-463e-489c-b862-4e15d213ba67">
+<img width="692" alt="error-find" src="https://github.com/ik-deep/tax-calculator/assets/80601941/a2f40867-a43c-4eac-b6c3-139513daa642">
+<img width="637" alt="output" src="https://github.com/ik-deep/tax-calculator/assets/80601941/4d385d26-3b2b-40bb-b0c9-444123d04654">
+
+
+
+
+
 <h3>Requirements</h3>
 
 - The project is implemented using HTML, CSS, and JavaScript.
